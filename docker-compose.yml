@@ -15,6 +15,7 @@ services:
     # Optional - alternative address used for autodiscovery
     environment:
       - TZ=${TIMEZONE}
+    devices:
       - /dev/dri:/dev/dri  # Optional - enables hardware acceleration for Intel GPUs
 
   gluetun:
